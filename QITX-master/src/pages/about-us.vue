@@ -230,7 +230,7 @@ export default {
   animation: Gradient 15s ease infinite;
   position: relative;
   width: 100%;
-  min-height: 200px;
+  min-height: 500px;
   overflow: hidden;
   padding: 0px;
   margin: 0px;

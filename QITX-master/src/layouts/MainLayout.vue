@@ -8,10 +8,10 @@
     >
       <q-toolbar>
         <q-toolbar-title class="gt-sm q-mx-xl" @click="$router.push('/')">
-          <p class="text-h4 q-pt-md text-bold">Quantum</p>
+          <p class="text-h4 q-pt-md text-bold" style="color:#E68619;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><span style="color: #3060A2;">Quan</span>tum</p>
         </q-toolbar-title>
         <q-toolbar-title class="lt-md" @click="$router.push('/')">
-          <p class="text-h4 q-pt-lg text-bold">Quantum</p>
+          <p class="text-h4 q-pt-md text-bold" style="color:#E68619;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><span style="color: #3060A2;">Quan</span>tum</p>
         </q-toolbar-title>
 
          <q-no-ssr>
@@ -175,7 +175,7 @@
           >
         </div>
          </q-no-ssr>
-         
+
          <div class="lt-md">
           <q-btn
             flat
@@ -325,12 +325,12 @@
                   <q-item-section>Career</q-item-section>
                 </q-item>
 
-                
+
               </q-list>
             </q-list>
           </q-expansion-item>
 
-          
+
 
           <q-item clickable v-ripple to="/contact-us">
             <q-item-section avatar>

@@ -182,7 +182,7 @@
     </div>
 
     <div class="bg-grey-2">
-      <p class="text-dark text-center q-pa-xl text-h5 q-ma-none gt-xs">
+      <p class="text-dark text-center q-pa-xl text-h5 q-ma-none gt-xs" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
         <span class="q-px-xl">For More information, Book Your Free Demo</span>
         <q-btn
           color="primary"
@@ -266,7 +266,7 @@ export default {
   animation: Gradient 15s ease infinite;
   position: relative;
   width: 100%;
-  min-height: 200px;
+  min-height: 500px;
   overflow: hidden;
   padding: 0px;
   margin: 0px;

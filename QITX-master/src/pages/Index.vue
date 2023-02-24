@@ -1,9 +1,9 @@
 <template>
   <div>
     <!------------------------Hero Section---------------------------------->
-    <q-parallax src="../assets/bg3.jpg" style="min-height:665px;" class="active" :height="windowHeight">
+    <q-parallax src="../assets/hero1-bg.jpg" style= "min-height:665px; " class="active" :height="windowHeight">
 
-      <div class="full-height full-width flex flex-center bg-accent column">
+      <div class="full-height full-width flex flex-center  column">
 
         <div class="flex flex-center column  q-px-md q-py-md animated slideInUp q-ma-sm" style="border-radius:25px;
             background-color: #b8c6db;

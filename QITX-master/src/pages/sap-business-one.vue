@@ -5,7 +5,7 @@
         <li>
           <q-img
             src="~assets/b111.png"
-            style="max-width: 100px"
+            style="max-width: 200px"
             class="absolute-center"
           />
         </li>
@@ -22,14 +22,14 @@
         <li>
           <q-img
             src="~assets/b111.png"
-            style="max-width: 100px"
+            style="max-width: 200px"
             class="absolute-center"
           />
         </li>
         <li>
           <q-img
             src="~assets/b111.png"
-            style="max-width: 100px"
+            style="max-width: 200px"
             class="absolute-center"
           />
         </li>
@@ -38,7 +38,7 @@
         <li>
           <q-img
             src="~assets/b111.png"
-            style="max-width: 100px"
+            style="max-width: 200px"
             class="absolute-center"
           />
         </li>
@@ -70,7 +70,7 @@ SAP Business One has the adequate capacity to guarantee you can enhance your bus
         </div>
         <div class="col-12 col-md q-pa-xl q-mr-xl">
           <q-video
-            :ratio="16 / 9"
+            :ratio="17 / 10"
             src="https://www.youtube.com/embed/8okLqhj3wao?rel=0"
           />
         </div>
@@ -405,7 +405,7 @@ export default {
   animation: Gradient 15s ease infinite;
   position: relative;
   width: 100%;
-  min-height: 200px;
+  min-height: 500px;
   overflow: hidden;
   padding: 0px;
   margin: 0px;
