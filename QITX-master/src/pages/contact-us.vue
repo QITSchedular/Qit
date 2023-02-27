@@ -1,5 +1,9 @@
 <template>
+
   <div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <div class="background column">
       <ul class="circles q-pa-none q-ma-none">
         <li></li>
@@ -59,7 +63,7 @@
           <div>
             <q-btn label="Submit" type="submit" color="primary" rounded />
             <q-btn
-              label="cancle"
+              label="cancel"
               type="reset"
               color="primary"
               flat
@@ -86,6 +90,17 @@
             href="mailto:keyur@qitsolution.co.in"
             target="_blank"
             style="width: 200px"
+          />
+          <q-btn
+            label="Schedule"
+            rounded
+            type="a"
+            icon="fa fa-calendar"
+            color="primary"
+            class="q-mx-md q-my-md"
+            href="https://calendly.com/advantco_/discovery-call?month=2023-02&date=2023-02-09"
+            target="_blank"
+            style="width: 170px"
           />
           <q-btn
             label=" (+91) 94274 78799"
@@ -117,7 +132,7 @@
     <div class="q-ma-xl" v-bind:class="{ 'q-px-xl': mobile }">
       <p class="text-h4 text-primary" data-aos="fade-up" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Find Us Here</p>
       <p class="text-subtitle1 text-grey" style="font-family:  system-ui;">
-        Shop No : 370 The Gallaria, Near Sanjeev Kumar Auditorium, opp. New RTO, Pal Gam, Surat, Gujarat 395009
+        Shop No : 370 The Galleria, Near Sanjeev Kumar Auditorium, opp. New RTO, Pal Gam, Surat, Gujarat 395009
       </p>
       <br />
       <iframe

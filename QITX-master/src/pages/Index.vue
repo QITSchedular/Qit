@@ -1,20 +1,24 @@
 <template>
   <div>
     <!------------------------Hero Section---------------------------------->
-    <q-parallax src="../assets/hero1-bg.jpg" style= "min-height:665px; " class="active" :height="windowHeight">
+    <q-parallax src="../assets/bg4.jpg" style= "min-height:665px; ;"  class="active" :height="windowHeight">
+
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
       <div class="full-height full-width flex flex-center  column">
-
         <div class="flex flex-center column  q-px-md q-py-md animated slideInUp q-ma-sm" style="border-radius:25px;
             background-color: #b8c6db;
             background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
             opacity:0.9;
             ">
           <q-img src="~assets/logo1.png" style="max-width:350px;opacity:1;" class="" />
-          <div class="text-h5 text-primary q-pt-md text-center" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+          <div class="text-h5 text-primary q-pt-md text-center" style="font-family:'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
             EXPLORE THE NEW POSSIBILITIES WITH SAP
           </div>
-          <div class="text-subtitle1 text-dark q-pt-md" style="max-width:600px; text-align:center;border-radius: 25px;font-family: system-ui;">
+          <div class="text-subtitle1 text-dark q-pt-md" style="max-width:600px; text-align:center;border-radius: 25px;font-family: ''Poppins','system-ui';">
             Quantum IT solution is Gujarat's leading software development firm across India. We offer an integrated
             solution(s) in SAP, Machine learning, Python, Blockchain as well as IT infrastructure end-to-end solutions
             with assured quality support.
@@ -24,23 +28,32 @@
             <q-btn @click="icon = true" class="play-btn" />
           </div>
         </div>
-        <q-icon name="fa fa-angle-double-down" color="white" size="md" class="q-mt-md "
-          v-bind:class="{ 'animated shakeY': jump }" />
+        <q-icon name="fa fa-angle-double-down" color="white" size="md" class="q-mt-md "  @click="scrollToAbout"
+          v-bind:class="{ 'animated shakeY': jump }"  />
+          <!-- <q-icon name="fa fa-angle-double-down" color="white" size="md" class="q-mt-md animated infinite bounce"
+  @click="scrollToAbout" /> -->
       </div>
     </q-parallax>
     <!------------------------Hero Section end---------------------------------->
     <q-dialog v-model="icon">
-      <q-card style="" v-bind:style="{ 'min-width': wid }">
-        <q-card-section>
-          <q-video :ratio="16 / 9" src="https://www.youtube.com/embed/caM_G9RUDTQ?rel=0" />
-        </q-card-section>
-      </q-card>
-    </q-dialog>
+  <q-card style="" v-bind:style="{ 'min-width': wid }">
+    <!-- Add the slot for the header of the dialog box -->
+    <q-card-section class="q-pa-md q-gutter-sm">
+      <div class="text-right">
+        <!-- Add a close button to the header of the dialog box -->
+        <q-icon name="close" size="2rem" class="cursor-pointer" @click="icon = false" />
+      </div>
+    </q-card-section>
+    <q-card-section>
+      <q-video :ratio="16 / 9" src="https://www.youtube.com/embed/uvzJyL4GEuU?rel=0" />
+    </q-card-section>
+  </q-card>
+</q-dialog>
 
 
 
     <!------------------------about Section end---------------------------------->
-    <div class="gt-sm gen">
+    <div class="gt-sm gen" id="about">
       <div class="row items-center q-mx-xl justify-center ">
         <div class="col-12 col-md q-pa-xl" data-aos="fade-up">
           <p class="text-h6 text-primary text-bold">
@@ -320,16 +333,26 @@
 
     </div>
 
-
-
-
   </div>
 </template>
 
 <script>
+  export default {
+    methods: {
+      scrollToAbout() {
+        const aboutSection = document.getElementById('about')
+        const aboutSectionOffsetTop = aboutSection.offsetTop
+        window.scrollTo({
+          top: aboutSectionOffsetTop,
+          behavior: 'smooth'
+        })
+      }
+    }
+  }
+</script>
+
+<script>
 import meta from '../utils/meta.js'
-
-
 export default {
   name: 'PageIndex',
   data() {
@@ -350,13 +373,10 @@ export default {
     }
   },
   meta,
-
   mounted() {
     setInterval(this.jumping, 5000);
     this.windowHeight = window.innerHeight
-
   },
-
   created() {
     if (this.$q.screen.lt.sm) {
       this.wid = '370px'
@@ -391,48 +411,38 @@ export default {
         })
       }
     },
-
     onReset() {
       this.name = null
       this.age = null
       this.accept = false
     }
-
   }
-
 }
 </script>
 <style lang="stylus" scoped>
-
 .gen{
   background-color: #b8c6db;
   background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
 }
-
 .s4{
   background-color: #b8c6db;
   background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
 }
-
 .b1{
   background-color: #2a2a72;
   background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 }
-
 .active {
   height: 100%;
 }
-
 .animated
   animation-duration: 1.5s
   animation-fill-mode: both
-
 .my-card{
   border-radius:50%
   width: 150px;
   height: 150px;
 }
-
 .brand{
   background: url('~assets/bitmap4.png')
   background-size: cover
@@ -447,7 +457,6 @@ export default {
   background-attachment: fixed
   background-repeat: no-repeat
 }
-
 .play-btn {
   width: 60px;
   height: 60px;
@@ -458,7 +467,6 @@ export default {
   overflow: hidden;
   position: relative;
 }
-
 .play-btn::after {
   content: '';
   position: absolute;
@@ -473,7 +481,6 @@ export default {
   z-index: 100;
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
 .play-btn::before {
   content: '';
   position: absolute;
@@ -496,12 +503,10 @@ export default {
   left: -15%;
   background: rgba(198, 16, 0, 0);
 }
-
 .play-btn:hover::after {
   border-left: 15px solid #3663a8;
   transform: scale(20);
 }
-
 .play-btn:hover::before {
   content: '';
   position: absolute;
@@ -519,7 +524,6 @@ export default {
   animation: none;
   border-radius: 0;
 }
-
 @-webkit-keyframes pulsate-btn {
   0% {
     transform: scale(0.6, 0.6);
@@ -530,7 +534,6 @@ export default {
     opacity: 0;
   }
 }
-
 @keyframes pulsate-btn {
   0% {
     transform: scale(0.6, 0.6);

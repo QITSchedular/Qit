@@ -1,11 +1,17 @@
 <template>
+
   <q-layout view="lHh Lpr lFf">
     <!-- header-->
     <q-header
       reveal
       class="animated slideInDown"
       v-bind:class="{ 'bg-transparent': transp, 'bg-accent': color }"
+
     >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
       <q-toolbar>
         <q-toolbar-title class="gt-sm q-mx-xl" @click="$router.push('/')">
           <p class="text-h4 q-pt-md text-bold" style="color:#E68619;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><span style="color: #3060A2;">Quan</span>tum</p>
@@ -111,7 +117,7 @@
                     class="text-subtitle2 text-dark"
                     >SAP Traning</router-link
                   >
-                  <router-link
+                  <!-- <router-link
                     to="/machine-learning-traning"
                     class="text-subtitle2 text-dark"
                     >Machine Learning Traning</router-link
@@ -120,7 +126,7 @@
                     to="/python-traning"
                     class="text-subtitle2 text-dark"
                     >Python Traning</router-link
-                  >
+                  > -->
                   <router-link
                     to="/placement-service"
                     class="text-subtitle2 text-dark"
@@ -194,7 +200,7 @@
     <div class="lt-md">
       <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-1">
         <div class="text-center text-secondary text-subtitle q-pa-md">
-          Nevigation
+          Navigation
         </div>
 
         <q-list bordered class="rounded-borders">
@@ -324,13 +330,9 @@
                 <q-item clickable v-ripple to="/career-at-quantum">
                   <q-item-section>Career</q-item-section>
                 </q-item>
-
-
               </q-list>
             </q-list>
           </q-expansion-item>
-
-
 
           <q-item clickable v-ripple to="/contact-us">
             <q-item-section avatar>
@@ -384,11 +386,51 @@
                   class="q-ml-sm"
                 />
               </div>
+
+
             </q-form>
           </div>
+
+          <div style="max-width: 400px; margin-top: 20px">
+          <p class="text-h6">Social Handles</p>
+          <q-btn
+            round
+            type="a"
+            href="https://www.facebook.com/Quantum-IT-Solution-113849966746159/"
+            icon="fab fa-facebook"
+            class="bg-primary q-mx-sm"
+            target="_blank"
+          />
+          <q-btn
+            round
+            type="a"
+            href="https://wa.link/gtl1nh"
+            icon="fab fa-whatsapp"
+            class="bg-primary q-mx-sm"
+            target="_blank"
+          />
+          <q-btn
+            round
+            type="a"
+            href="https://www.linkedin.com/company/quantum-it-solution/"
+            icon="fab fa-linkedin"
+            class="bg-primary q-mx-sm"
+            target="_blank"
+          />
+          <q-btn
+            round
+            type="a"
+            href="https://calendly.com/advantco_/discovery-call?month=2023-02&date=2023-02-09"
+            icon="fa fa-calendar"
+            class="bg-primary q-mx-sm"
+            target="_blank"
+          />
+        </div>
+
+
         </div>
         <div class="q-ma-xl">
-          <p class="text-h6">Nevigation Links</p>
+          <p class="text-h6">Navigation Links</p>
           <q-btn flat color="white" label="About US" to="/about-us" />
           <br />
           <q-btn
@@ -407,38 +449,37 @@
           <br />
           <q-btn flat color="white" label="Career" to="/career-at-quantum" />
         </div>
+
         <div class="q-ma-xl">
-          <p class="text-h6">Address</p>
-          <p class="text-subtitle">
-            Shop No : 370 The Gallaria, <br />Near Sanjeev Kumar Auditorium,
-            <br />opp. New RTO, Pal Gam,<br />
-            Surat, Gujarat 395009
-          </p>
-          <p class="text-h6">Social Handles</p>
+          <p class="text-h6">Important Links</p>
+
+          <q-btn flat color="white" label="SAP Business One Partner in Vadodara" to="/" />
+          <br />
           <q-btn
-            round
-            type="a"
-            href="https://www.facebook.com/Quantum-IT-Solution-113849966746159/"
-            icon="fab fa-facebook"
-            class="bg-primary q-mx-sm"
+            flat
+            color="white"
+            label="SAP Business One Partner in Ahmedabad"
+            to="/"
           />
+          <br />
           <q-btn
-            round
-            type="a"
-            href="https://wa.link/gtl1nh"
-            icon="fab fa-whatsapp"
-            class="bg-primary q-mx-sm"
-          />
-          <q-btn
-            round
-            type="a"
-            href="https://www.linkedin.com/company/quantum-it-solution/"
-            icon="fab fa-linkedin"
-            class="bg-primary q-mx-sm"
+            flat
+            color="white"
+            label="SAP Business One Partner in Mumbai"
+            to="/"
           />
         </div>
+
+
+
         <div class="q-ma-xl">
+
           <p class="text-h6">Contact US</p>
+          <p class="text-subtitle">
+            Shop No : 370 The Galleria, <br />Near Sanjeev Kumar Auditorium,
+            <br />Opposite New RTO, Pal Gam,<br />
+            Surat, Gujarat 395009
+          </p>
           <p class="text-subtitle">
             <q-icon
               name="call"
@@ -508,11 +549,47 @@
               </div>
             </q-form>
           </div>
+          <div style="max-width: 400px; margin-top: 20px">
+          <p class="text-h6">Social Handles</p>
+          <q-btn
+            round
+            type="a"
+            href="https://www.facebook.com/Quantum-IT-Solution-113849966746159/"
+            icon="fab fa-facebook"
+            class="bg-primary q-mx-sm"
+            target="_blank"
+          />
+          <q-btn
+            round
+            type="a"
+            href="https://wa.link/gtl1nh"
+            icon="fab fa-whatsapp"
+            class="bg-primary q-mx-sm"
+            target="_blank"
+          />
+          <q-btn
+            round
+            type="a"
+            href="https://www.linkedin.com/company/quantum-it-solution/"
+            icon="fab fa-linkedin"
+            class="bg-primary q-mx-sm"
+            target="_blank"
+          />
+          <q-btn
+            round
+            type="a"
+            href="https://calendly.com/advantco_/discovery-call?month=2023-02&date=2023-02-09"
+            icon="fa fa-calendar"
+            class="bg-primary q-mx-sm"
+            target="_blank"
+
+          />
+        </div>
         </div>
       </div>
       <div class="col-12 col-md">
         <div class="q-mx-xl q-my-md">
-          <p class="text-h6">Nevigation Links</p>
+          <p class="text-h6">Navigation Links</p>
           <q-btn flat color="white" label="About US" to="/about-us" />
           <br />
           <q-btn
@@ -534,38 +611,32 @@
       </div>
       <div class="col-12 col-md">
         <div class="q-mx-xl q-my-md">
-          <p class="text-h6">Address</p>
-          <p class="text-subtitle">
-            Shop No : 370 The Gallaria, <br />Near Sanjeev Kumar Auditorium,<br />Pal
-            Gam, Surat, Gujarat 395009
-          </p>
-          <p class="text-h6">Social Handles</p>
+          <p class="text-h6">Important Links</p>
+          <q-btn flat color="white" label="SAP Business One Partner in Vadodara" to="/" />
+          <br />
           <q-btn
-            round
-            type="a"
-            href="https://www.facebook.com/Quantum-IT-Solution-113849966746159/"
-            icon="fab fa-facebook"
-            class="bg-primary q-mx-sm"
+            flat
+            color="white"
+            label="SAP Business One Partner in Ahmedabad"
+            to="/"
           />
+          <br />
           <q-btn
-            round
-            type="a"
-            href="https://wa.link/gtl1nh"
-            icon="fab fa-whatsapp"
-            class="bg-primary q-mx-sm"
-          />
-          <q-btn
-            round
-            type="a"
-            href="https://www.linkedin.com/company/quantum-it-solution/"
-            icon="fab fa-linkedin"
-            class="bg-primary q-mx-sm"
+            flat
+            color="white"
+            label="SAP Business One Partner in Mumbai"
+            to="/"
           />
         </div>
       </div>
       <div class="col-12 col-md">
         <div class="q-mx-xl q-my-md">
           <p class="text-h6">Contact US</p>
+          <p class="text-subtitle">
+            Shop No : 370 The Galleria, <br />Near Sanjeev Kumar Auditorium,
+            <br />Opposite New RTO, Pal Gam,<br />
+            Surat, Gujarat 395009
+          </p>
           <p class="text-subtitle">
             <q-icon
               name="call"
@@ -656,6 +727,22 @@
             <strong>Connect On whatsapp</strong>
           </q-tooltip>
         </q-fab-action>
+        <q-fab-action
+          color="primary"
+          icon="fa fa-calendar"
+          :disable="draggingFab"
+          type="a"
+          href="https://calendly.com/advantco_/discovery-call?month=2023-02&date=2023-02-09"
+          target="_blank"
+        >
+          <q-tooltip
+            anchor="center left"
+            self="center right"
+            :offset="[10, 10]"
+          >
+            <strong>Schedule a Meeting</strong>
+          </q-tooltip>
+        </q-fab-action>
       </q-fab>
     </q-page-sticky>
 
@@ -704,7 +791,7 @@
             <div>
               <q-btn label="Submit" type="submit" color="primary" />
               <q-btn
-                label="cancle"
+                label="cancel"
                 type="reset"
                 color="primary"
                 flat
@@ -725,7 +812,6 @@ import meta from "../utils/meta.js";
 import { debounce } from "quasar";
 import firebase from "firebase";
 const db = firebase.firestore();
-
 export default {
   name: "MainLayout",
   data() {
@@ -860,7 +946,6 @@ export default {
     },
     moveFab(ev) {
       this.draggingFab = ev.isFirst !== true && ev.isFinal !== true;
-
       this.fabPos = [this.fabPos[0] - ev.delta.x, this.fabPos[1] - ev.delta.y];
     },
   },
@@ -871,20 +956,16 @@ export default {
 .q-page-container {
   padding-top: 0 !important;
 }
-
 .animated {
   animation-duration: 2s;
   animation-fill-mode: both;
 }
-
 .q-btn:hover {
   background-color: rgba(255, 139, 15, 0.3);
 }
-
 .navbar {
   overflow: hidden;
 }
-
 .navbar a {
   float: left;
   color: white;
@@ -893,13 +974,11 @@ export default {
   text-decoration: none;
   border-radius: 5px;
 }
-
 /* -----Dropdown menu----- */
 .dropdown {
   float: left;
   overflow: hidden;
 }
-
 .dropdown .dropbtn {
   border: none;
   outline: none;
@@ -908,7 +987,6 @@ export default {
   background-color: inherit;
   margin: 0;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -918,7 +996,6 @@ export default {
   border-radius: 5px;
   min-width: 230px;
 }
-
 .dropdown-content a {
   float: none;
   text-decoration: none;
@@ -926,13 +1003,11 @@ export default {
   text-align: left;
   color: #1D1D1D;
 }
-
 /* -----Dropright menu----- */
 .dropdown-content .dropright {
   overflow: hidden;
   border-radius: 5px;
 }
-
 .dropright div {
   /* to show drop-right menu exactly to the right */
   /* if this is removed, the menu will be shown to the bottom right of the button */
@@ -940,7 +1015,6 @@ export default {
   width: 100%;
   border-radius: 5px;
 }
-
 .dropright .drbtn {
   width: 100%;
   text-align: left;
@@ -951,7 +1025,6 @@ export default {
   margin: 0;
   color: #1D1D1D;
 }
-
 .dropright-content {
   display: none;
   position: absolute;
@@ -960,31 +1033,25 @@ export default {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
 /* -----Effects for Hovering over----- */
 .navbar a:hover, .dropdown:hover .dropbtn {
   color: #ff8b0f;
 }
-
 .dropdown-content a:hover, .dropright:hover .drbtn {
   background-color: #ddd;
   color: #ff8b0f;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
   color: #ff8b0f;
 }
-
 .dropright:hover .dropright-content {
   display: block;
   color: #ff8b0f;
 }
-
 .dropright-content i {
   float: right;
 }
-
 button {
   cursor: pointer;
 }
