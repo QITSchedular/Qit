@@ -8,6 +8,27 @@ const routes = [
     ]
   },
   {
+    path: '/sap-vadodara',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/sap-vadodara.vue') }
+    ]
+  },
+  {
+    path: '/sap-ahmedabad',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/sap-ahmedabad.vue') }
+    ]
+  },
+  {
+    path: '/sap-mumbai',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/sap-mumbai.vue') }
+    ]
+  },
+  {
     path: '/sap-business-one',
     component: () => import('layouts/MainLayout.vue'),
     children: [

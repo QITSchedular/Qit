@@ -453,20 +453,20 @@
         <div class="q-ma-xl">
           <p class="text-h6">Important Links</p>
 
-          <q-btn flat color="white" label="SAP Business One Partner in Vadodara" to="/" />
+          <q-btn flat color="white" label="SAP Business One Partner in Vadodara" to="/sap-vadodara" />
           <br />
           <q-btn
             flat
             color="white"
             label="SAP Business One Partner in Ahmedabad"
-            to="/"
+            to="/sap-ahmedabad"
           />
           <br />
           <q-btn
             flat
             color="white"
             label="SAP Business One Partner in Mumbai"
-            to="/"
+            to="/sap-mumbai"
           />
         </div>
 
@@ -612,20 +612,20 @@
       <div class="col-12 col-md">
         <div class="q-mx-xl q-my-md">
           <p class="text-h6">Important Links</p>
-          <q-btn flat color="white" label="SAP Business One Partner in Vadodara" to="/" />
+          <q-btn flat color="white" label="SAP Business One Partner in Vadodara" to="/sap-vadodara" />
           <br />
           <q-btn
             flat
             color="white"
             label="SAP Business One Partner in Ahmedabad"
-            to="/"
+            to="/sap-ahmedabad"
           />
           <br />
           <q-btn
             flat
             color="white"
             label="SAP Business One Partner in Mumbai"
-            to="/"
+            to="/sap-mumbai"
           />
         </div>
       </div>

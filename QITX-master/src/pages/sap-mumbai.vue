@@ -19,7 +19,7 @@
             EXPLORE THE NEW POSSIBILITIES WITH SAP
           </div>
           <div class="text-subtitle1 text-dark q-pt-md" style="max-width:600px; text-align:center;border-radius: 25px;font-family: ''Poppins','system-ui';">
-            Quantum IT solution is Gujarat's leading software development firm across India. We offer an integrated
+            Quantum IT solution is Mumbai's leading software development firm across India. We offer an integrated
             solution(s) in SAP, Machine learning, Python, Blockchain as well as IT infrastructure end-to-end solutions
             with assured quality support.
           </div>
@@ -335,7 +335,7 @@
 
   </div>
 </template>
-<script>
+<!-- <script>
 // import Vue from 'vue'
 import VueScrollTo from 'vue-scrollto'
 export default {
@@ -343,7 +343,7 @@ export default {
     Vue.use(VueScrollTo);
   },
 };
-</script>
+</script> -->
 <script>
 import meta from '../utils/meta.js'
 export default {
@@ -359,7 +359,7 @@ export default {
       icon: false,
       wid: null,
       metaTags: {
-        description: ' Quantum IT solution is Gujarat leading software development firm across the India. We offer integrated solution(s) in SAP, Machine learning, Python, Blockchain',
+        description: ' Quantum IT solution is Mumbai leading software development firm across the India. We offer integrated solution(s) in SAP, Machine learning, Python, Blockchain',
         title: 'Quantum | SAP Trusted Channel Partner',
         keywords: 'SAP Solution,SAP Implementation,SAP Channel Partner, SAP Solution in India, SAP Business One, SAP S/4 HANA, IT Solution'
       }
