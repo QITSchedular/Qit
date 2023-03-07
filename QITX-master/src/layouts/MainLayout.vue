@@ -14,10 +14,10 @@
 
       <q-toolbar>
         <q-toolbar-title class="gt-sm q-mx-xl" @click="$router.push('/')">
-          <p class="text-h4 q-pt-md text-bold" style="color:#E68619;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><span style="color: #3060A2;">Quan</span>tum</p>
+          <p class="text-h4 q-pt-md text-bold" style="color:#E68619;font-family:'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 700;"><span style="color: #3060A2;">Quan</span>tum</p>
         </q-toolbar-title>
         <q-toolbar-title class="lt-md" @click="$router.push('/')">
-          <p class="text-h4 q-pt-md text-bold" style="color:#E68619;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><span style="color: #3060A2;">Quan</span>tum</p>
+          <p class="text-h4 q-pt-md text-bold" style="color:#E68619;font-family:'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 700;"><span style="color: #3060A2;">Quan</span>tum</p>
         </q-toolbar-title>
 
          <q-no-ssr>
@@ -452,7 +452,8 @@
 
         <div class="q-ma-xl">
           <p class="text-h6">Important Links</p>
-
+          <q-btn flat color="white" label="SAP Business B1 Partner in Surat" to="/sap-b1-surat" />
+            <br/>
           <q-btn flat color="white" label="SAP Business One Partner in Vadodara" to="/sap-vadodara" />
           <br />
           <q-btn
@@ -468,6 +469,9 @@
             label="SAP Business One Partner in Mumbai"
             to="/sap-mumbai"
           />
+          <br/>
+          <q-btn flat color="white" label="SAP Business B1 Partner in Bangalore" to="/sap-b1-bangalore" />
+
         </div>
 
 
@@ -476,7 +480,7 @@
 
           <p class="text-h6">Contact US</p>
           <p class="text-subtitle">
-            Shop No : 370 The Galleria, <br />Near Sanjeev Kumar Auditorium,
+            Shop No :370 and 350-351. The Galleria, <br />Near Sanjeev Kumar Auditorium,
             <br />Opposite New RTO, Pal Gam,<br />
             Surat, Gujarat 395009
           </p>
@@ -612,6 +616,10 @@
       <div class="col-12 col-md">
         <div class="q-mx-xl q-my-md">
           <p class="text-h6">Important Links</p>
+          <q-btn flat color="white" label="SAP Business B1 Partner in Surat" to="/sap-b1-surat" />
+
+          <br/>
+
           <q-btn flat color="white" label="SAP Business One Partner in Vadodara" to="/sap-vadodara" />
           <br />
           <q-btn
@@ -627,13 +635,16 @@
             label="SAP Business One Partner in Mumbai"
             to="/sap-mumbai"
           />
+          <br/>
+          <q-btn flat color="white" label="SAP Business B1 Partner in Bangalore" to="/sap-b1-bangalore" />
+
         </div>
       </div>
       <div class="col-12 col-md">
         <div class="q-mx-xl q-my-md">
           <p class="text-h6">Contact US</p>
           <p class="text-subtitle">
-            Shop No : 370 The Galleria, <br />Near Sanjeev Kumar Auditorium,
+            Shop No : 370 and 350-351. The Galleria, <br />Near Sanjeev Kumar Auditorium,
             <br />Opposite New RTO, Pal Gam,<br />
             Surat, Gujarat 395009
           </p>

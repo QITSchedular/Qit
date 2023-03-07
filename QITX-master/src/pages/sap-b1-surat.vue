@@ -59,8 +59,8 @@
     <div class="gt-sm gen">
       <div class="row items-center q-mx-xl justify-center ">
         <div class="col-12 col-md q-pa-xl" data-aos="fade-up">
-          <p class="text-h6 text-primary text-bold" style="font-family:'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-            SAP Channel Partner
+          <p class="text-h6 text-primary text-bold">
+            SAP Channal Partner
           </p>
           <p class="text-h4" style="font-family:'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
             Innovative Solution and Business Transformation.

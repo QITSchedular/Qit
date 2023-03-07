@@ -15,7 +15,7 @@
             opacity:0.9;
             ">
           <q-img src="~assets/logo1.png" style="max-width:350px;opacity:1;" class="" />
-          <div class="text-h5 text-primary q-pt-md text-center" style="font-family:'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+          <div class="text-h5 text-primary q-pt-md text-center" style="font-family:'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 600;">
             EXPLORE THE NEW POSSIBILITIES WITH SAP
           </div>
           <div class="text-subtitle1 text-dark q-pt-md" style="max-width:600px; text-align:center;border-radius: 25px;font-family: ''Poppins','system-ui';">
@@ -59,7 +59,7 @@
           <p class="text-h6 text-primary text-bold">
             SAP Channal Partner
           </p>
-          <p class="text-h4" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+          <p class="text-h4" style="font-family:'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
             Innovative Solution and Business Transformation.
           </p>
           <p class="text-subtitle1 text-dark" style="font-family:  system-ui;">
@@ -96,7 +96,7 @@
           <p class="text-h6 text-primary text-bold">
             SAP Channal Partner
           </p>
-          <p class="text-h4" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+          <p class="text-h4" style="font-family:'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
             Innovative Solution and Business Transfrornation
           </p>
           <p class="text-subtitle1 text-dark" style="font-family:  system-ui;">

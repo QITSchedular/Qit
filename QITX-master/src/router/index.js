@@ -3,7 +3,9 @@ import VueRouter from 'vue-router'
 import routes from './routes'
 import firebase from 'firebase'
 require('firebase/auth')
+import VueMeta from 'vue-meta';
 
+Vue.use(VueMeta)
 Vue.use(VueRouter)
 
 

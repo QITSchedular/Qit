@@ -29,6 +29,20 @@ const routes = [
     ]
   },
   {
+    path: '/sap-b1-surat',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/sap-b1-surat.vue') }
+    ]
+  },
+  {
+    path: '/sap-b1-bangalore',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('src/pages/sap-b1-bangalore.vue') }
+    ]
+  },
+  {
     path: '/sap-business-one',
     component: () => import('layouts/MainLayout.vue'),
     children: [
